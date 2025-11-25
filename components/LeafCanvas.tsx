@@ -324,11 +324,13 @@ const LeafCanvas: React.FC<LeafCanvasProps> = ({ imageSrc, type, className, hide
   return (
     <div className={`flex flex-col overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-white ${className}`}>
         {!hideLabel && (
-            <div className="bg-slate-50 text-slate-700 text-xs font-bold px-3 py-2 border-b border-slate-200 uppercase tracking-wider flex-none">
-                {type}
+            <div className="bg-white border-b border-slate-100 px-4 py-3 flex-none">
+                <h3 className="text-sm font-semibold text-slate-900 leading-tight">
+                    {type}
+                </h3>
             </div>
         )}
-        <div className="relative flex-1 w-full min-h-0 bg-black">
+        <div className="relative flex-1 w-full min-h-0 bg-black group">
             <canvas 
                 ref={canvasRef} 
                 className="w-full h-full object-cover block"
