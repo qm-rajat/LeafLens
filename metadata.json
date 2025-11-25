@@ -1,0 +1,5 @@
+{
+  "name": "LeafLens",
+  "description": "An intelligent botanical analysis tool that identifies leaf species using Gemini Vision and generates analytical visualizations.",
+  "requestFramePermissions": []
+}
